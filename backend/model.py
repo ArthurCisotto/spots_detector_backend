@@ -1,5 +1,5 @@
 import os
-#from ultralytics import YOLO
+from ultralytics import YOLO
 import cv2
 import numpy as np
 from django.core.files.base import ContentFile
@@ -7,7 +7,7 @@ from django.core.files.storage import default_storage
 from django.conf import settings
 import base64
 
-'''
+
 def process_image_with_yolo(image_file):
     #print current working directory
     
@@ -49,4 +49,3 @@ def process_image_with_yolo(image_file):
     image_base64 = base64.b64encode(buffer).decode()
     return image_base64
 
-'''
