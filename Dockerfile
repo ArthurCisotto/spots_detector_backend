@@ -8,6 +8,8 @@ WORKDIR /spots_detector
 # Copy the current directory contents into the container at /app
 COPY . /spots_detector
 
+RUN pip install dill --upgrade
+
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
