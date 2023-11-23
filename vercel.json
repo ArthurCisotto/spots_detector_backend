@@ -1,0 +1,13 @@
+{
+    "builds": [{
+        "src": "spots_detector/wsgi.py",
+        "use": "@ardnt/vercel-python-wsgi",
+        "config": { "maxLambdaSize": "15mb" }
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "spots_detector/wsgi.py"
+        }
+    ]
+}
