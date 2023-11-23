@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-awcyitm_4h$pk!7+c8w+zqw5nd%@51zo=lvaohlat52q(mv(=b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 
 # Application definition
@@ -86,7 +86,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'spots_detector.wsgi.application'
+WSGI_APPLICATION = 'spots_detector.wsgi.app'
 
 
 # Database
