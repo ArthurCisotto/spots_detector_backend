@@ -1,7 +1,7 @@
 {
     "builds": [{
         "src": "spots_detector/wsgi.py",
-        "use": "@now/python",
+        "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb" }
     }],
     "routes": [
