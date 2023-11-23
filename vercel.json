@@ -1,13 +1,14 @@
 {
     "builds": [{
-        "src": "spots_detector/wsgi.py",
-        "use": "@ardnt/vercel-python-wsgi",
-        "config": { "maxLambdaSize": "15mb" , "runtime": "python3.6" }
+        "src": "index.py",
+        "use": "@natanffs/vercel-python-wsgi",
+        "config": { "maxLambdaSize": "15mb" , "runtime": "python3.9" , "wsgiApplicationName": "app"}
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "spots_detector/wsgi.py"
+            "dest": "/spots_detector/wsgi.py"
         }
-    ]
+    ],
+    "outputDirectory": "build"
 }
