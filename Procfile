@@ -1,0 +1,1 @@
+web: gunicorn 'spots_detector.wsgi'
