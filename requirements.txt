@@ -1,4 +1,4 @@
-﻿ultralytics==8.0.23
+ultralytics==8.0.23
 opencv-python
 Django==3.2.5
 django-cors-headers==3.7.0
