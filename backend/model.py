@@ -11,7 +11,7 @@ import base64
 def process_image_with_yolo(image_file):
     #print current working directory
     
-    model_path = os.path.join(settings.MODEL_ROOT, 'runs', 'detect', 'train9', 'weights', 'best.pt')
+    model_path = os.path.join(settings.MODEL_ROOT, 'runs', 'detect', 'train11', 'weights', 'best.pt')
     #model_path = 'backend/spots_detector/backend/yolo_model/runs/detect/train6/weights/best.pt'
     model = YOLO(model_path)  # Carregar um modelo customizado
     threshold = 0.1
