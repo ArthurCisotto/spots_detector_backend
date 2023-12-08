@@ -43,7 +43,7 @@ def process_image_with_yolo(image_file):
             font_scale = max(0.5, font_scale)  # Define um tamanho mínimo para a fonte
 
             # Desenha o texto
-            cv2.putText(frame, f'Prob: {score:.2f}%', (int(x1 + 5), int(y2 - 10)), cv2.FONT_HERSHEY_SIMPLEX, font_scale, (0, 0, 0), 2)
+            cv2.putText(frame, f'Prob: {score*100:.2f}%', (int(x1 + 5), int(y2 - 10)), cv2.FONT_HERSHEY_SIMPLEX, font_scale, (0, 0, 0), 2)
             
     _, buffer = cv2.imencode('.jpg', frame)
     image_base64 = base64.b64encode(buffer).decode()
